@@ -1,11 +1,12 @@
 {
   "scripts": {
     "start": "vite",
-    "homepage": "https://yourusername.github.io/reponame",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "mkdir -p build && cp -r * build"
-  },
+    "homepage": "https://skimran-coder.github.io/Razorpay-Clone/",
+    "predeploy": "npm run clean && npm run build",
+    "deploy": "gh-pages -d dist",
+    "build": "vite build",
+    "clean": "rm -rf build"
+  },  
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "gh-pages": "^6.0.0",
